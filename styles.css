@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  --color-dark-gray: rgba(32, 33, 36, 0.98);
+  --color-green: #8bc34a;
+  --color-green-darken: #84b44e;
+  --font-serif: "Lora", serif;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: var(--color-dark-gray);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.bam-logo {
+  height: 3rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+
+.buttons-container {
+}
+
+.circle-btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login-btn {
+  color: white;
+  border: 2px solid white;
+  margin-right: 16px;
+}
+
+.login-btn:hover {
+  color: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+
+.sign-up-btn {
+  color: white;
+  background-color: #3574d6;
+  border: 2px solid #3574d6;
+}
+
+.sign-up-btn:hover {
+  color: white;
+  background-color: #3767b4;
+  border: 2px solid #3767b4;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  padding-top: 74px;
+  min-height: 600px;
+  display: flex;
+}
+
+.hero__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  padding: 0 2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.hero-btns {
+  display: block;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.hero-image {
+  width: 80%;
+}
+
+/* Vendors Section */
+.vendors {
+  max-width: 900px;
+}
+.vendors-heading {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+}
+
+.vendors-logos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.vendors-logos img {
+  height: 4rem;
+}
+
+/* Manage Section */
+.manage {
+  display: flex;
+  margin-top: 8rem;
+}
+
+.manage__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.manage-heading {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  padding-left: 2rem;
+}
+
+.manage__left p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.manage__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.manage-image {
+  width: 80%;
+}
+
+/* Video Section */
+.video {
+  display: flex;
+  margin-top: 8rem;
+}
+
+.video__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-heading {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  padding: 0 2rem;
+}
+
+.video__right p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.video-btns {
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-dark-gray);
+  margin-top: 8rem;
+  color: white;
+}
+
+.footer__top {
+  padding-top: 2rem;
+  display: flex;
+}
+
+.column-contact {
+  margin-right: 10rem;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  color: rgb(221, 221, 221);
+}
+
+.phone {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.column-links {
+  display: flex;
+  flex-direction: column;
+}
+.column-links a {
+  color: var(--color-green);
+}
+
+.column-links a:hover {
+  color: var(--color-green-darken);
+}
+
+.footer__top hr {
+  height: 2px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.footer__bottom a {
+  color: var(--color-green);
+  margin-left: 2rem;
+}
+
+.footer__bottom a:hover {
+  color: var(--color-green-darken);
+}
