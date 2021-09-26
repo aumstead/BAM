@@ -15,15 +15,14 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
+      <div class="navbar-wrapper">
         <a class="navbar-brand" href="#">
           <img class="bam-logo" src="assets/BAM-LOGO-NAV.png" alt="BAM logo" />
         </a>
         <button
+          id="open-mobile-nav"
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -44,8 +43,34 @@
       </div>
     </nav>
 
+    <div id="side-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <a class="navbar-brand" href="/index.html">
+          <img class="bam-logo" src="assets/BAM-LOGO-NAV.png" alt="BAM logo" />
+        </a>
+        <button id="mobile-close" type="button" class="close-btn">
+          <img
+            src="/assets/svgs/close-white.svg"
+            alt="X for closing mobile navigation"
+          />
+        </button>
+      </div>
+      <nav>
+        <div class="mobile-nav-btns">
+          <a class="mobile-circle-btn mobile-login-btn">Login</a>
+          <a class="mobile-circle-btn mobile-sign-up-btn">Sign up</a>
+        </div>
+        <hr class="mobile-nav-hr" />
+        <ul>
+          <li><a class="" href="">Title Company</a></li>
+          <li><a class="" href="">Mortgage Company</a></li>
+          <li><a class="" href="">Home Inspectors</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <section>
-      <div class="container hero">
+      <div class="hero">
         <div class="hero__left">
           <h2 class="hero-title">
             Welcome to the #1 CRM for Real Estate vendors
@@ -66,7 +91,7 @@
     </section>
 
     <section>
-      <div class="container vendors">
+      <div class="vendors">
         <h3 class="vendors-heading text-center">
           Join the over 450 real estate vendors already utilizing <br />the
           Broker Agent Marketing Dashboard
@@ -82,7 +107,7 @@
     </section>
 
     <section>
-      <div class="container manage">
+      <div class="manage">
         <div class="manage__left">
           <h3 class="manage-heading">
             Easily manage your business from your laptop
@@ -104,7 +129,7 @@
     </section>
 
     <section>
-      <div class="container video">
+      <div class="video">
         <div class="video__left">
           <iframe
             width="500"
@@ -128,32 +153,192 @@
         </div>
       </div>
     </section>
-  </body>
 
-  <footer>
-    <div class="container footer__top">
-      <div class="column-contact">
-        <h6 class="footer-heading">Give us a call:</h6>
-        <span class="phone">1-888-854-0798</span><br />
-        <span>8am - 5:30pm EST Monday - Friday.</span>
+    <section class="get-started-section">
+      <div class="container-xl get-started-container">
+        <h2 class="text-center">Get Started</h2>
+        <div class="row get-started-row">
+          <div class="col get-started-col">
+            <span>1</span>
+            <h3>Lorem, ipsum dolor</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              iste recusandae nam.
+            </p>
+          </div>
+          <div class="col get-started-col">
+            <span>2</span>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+              tempora vitae, ad sit adipisci minus nostrum!
+            </p>
+          </div>
+          <div class="col get-started-col">
+            <span>3</span>
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              tenetur sit eaque aperiam laborum.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="column-links">
-        <h6 class="footer-heading">Links:</h6>
-        <a href="#">Email us</a>
-        <a href="#">Bulk Prices (50 or more reps)</a>
+    </section>
+
+    <section class="redirect-cards-section">
+      <div class="container redirect-cards-container">
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img src="/assets/cards/reading.png" alt="Man reading" />
+          </div>
+          <div class="card-content">
+            <h3>Learn about the benefits of home warranties.</h3>
+            <div class="card-cta">
+              <span>Read benefits</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img
+              src="assets/cards/pricing.png"
+              alt="Man examining diamond with magnifying glass"
+            />
+          </div>
+          <div class="card-content">
+            <h3>See how we price our Premier and Simple warranty packages.</h3>
+            <div class="card-cta">
+              <span>See pricing</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img
+              src="assets/cards/estimate.png"
+              alt="Woman in giant magnifying glass"
+            />
+          </div>
+          <div class="card-content">
+            <h3>
+              Get an estimate for your property. Lorem ipsum dolor sit amet.
+            </h3>
+            <div class="card-cta">
+              <span>Request quote</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card">
+          <div class="card__img-container">
+            <img src="assets/cards/claim.png" alt="Man on laptop" />
+          </div>
+          <div class="card-content">
+            <h3>Already have a policy? Submit a claim here!</h3>
+            <div class="card-cta">
+              <span>Submit claims</span>
+            </div>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="container">
-      <hr />
-    </div>
-    <div class="container footer__bottom">
-      <div class="copyright">
-        <div>&copy;2020 Inspector Services Group. All Rights Reserved.</div>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="text-center">Ready to try our dashboard?</h2>
+      <div class="cta-btns">
+        <a class="cta-btn-white" href="#">Free Demo</a>
+        <a class="cta-btn-transparent" href="#">Ask us a question</a>
       </div>
-      <div class="legal-links">
-        <a href="#" class="footer-a">Privacy and Security</a>
-        <a href="#" class="footer-a">Terms of Use</a>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="logo-col">
+            <img
+              style="height: 5rem"
+              src="assets/BAM-LOGO-NAV.png"
+              alt="logo"
+            />
+          </div>
+          <div class="links-col">
+            <h6>Why RWS</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Product</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="links-col">
+            <h6>Contact Us</h6>
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="img-col">
+            <img src="assets/svgs/at-pc.png" alt="Man at computer" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="copyright">
+            <span>&copy;2021 Residential Warranty Services, Inc.</span>
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo.</span
+            >
+          </div>
+          <div class="legal-links">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+    <!-- <footer>
+      <div class="container footer__top">
+        <div class="column-contact">
+          <h6 class="footer-heading">Give us a call:</h6>
+          <span class="phone">1-888-854-0798</span><br />
+          <span>8am - 5:30pm EST Monday - Friday.</span>
+        </div>
+        <div class="column-links">
+          <h6 class="footer-heading">Links:</h6>
+          <a href="#">Email us</a>
+          <a href="#">Bulk Prices (50 or more reps)</a>
+        </div>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container footer__bottom">
+        <div class="copyright">
+          <div>&copy;2020 Inspector Services Group. All Rights Reserved.</div>
+        </div>
+        <div class="legal-links">
+          <a href="#" class="footer-a">Privacy and Security</a>
+          <a href="#" class="footer-a">Terms of Use</a>
+        </div>
+      </div>
+    </footer> -->
+    <script src="index.js"></script>
+  </body>
 </html>
